@@ -1,0 +1,13 @@
+<div>
+    <!--el ngModel es un controlador entre el html y el typescript-->
+    Numero 1: <input type="text" [(ngModel)]="numero1" name="numero1"><br>
+    Numero 2: <input type="text" [(ngModel)]="numero2" name="numero2"><br>
+    Tipo de Operacion: <input type="text" [(ngModel)]="numero3" name="numero3"><br>
+    1=sumar<br>
+    2=restar<br>
+    3=multiplicar<br>
+    4=dividir<br>
+    <button type="button" (click)="sumar()">Calcular</button>
+
+    <h1>{{total}}</h1>
+</div>
