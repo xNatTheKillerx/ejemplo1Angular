@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { SumaComponent } from './calculos/suma/suma.component';
 import { RestaComponent } from './calculos/resta/resta.component';
 
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
+import { ProductListComponent } from './product/product-list/product-list.component';
+import { ProductoFilterPipe } from './product/producto-filter.pipe'
 
 @NgModule({
   declarations: [
     AppComponent,
     SumaComponent,
-    RestaComponent
+    RestaComponent,
+    ProductListComponent,
+    ProductoFilterPipe
   ],
   imports: [
     BrowserModule,
