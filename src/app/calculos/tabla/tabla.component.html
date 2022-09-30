@@ -1,0 +1,14 @@
+<div>
+    <!--el ngModel es un controlador entre el html y el typescript-->
+    Numero: <input type="text" [(ngModel)]="numero" name="numero"><br>
+    <button type="button" (click)="tabla()">Calcular</button>
+
+    
+</div>
+<div>
+    <spam *ngFor="let total of totalA ">
+        
+        {{total}} <br>
+        
+    </spam>
+</div>
