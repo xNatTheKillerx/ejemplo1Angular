@@ -1,7 +1,13 @@
-<div>
+<div class="text-center">
+    <h1>CINEPOLIS</h1>
+</div>
+<div class="container text-left">
+    <div class="row">
+        <div class="col">
+            <h2>Entradas</h2>
     <!--el ngModel es un controlador entre el html y el typescript-->
-    Nombre: <input type="text" [(ngModel)]="nombre" name="nombre"><br>
-    Cantidad Compradores (MAX 5): <input type="text" [(ngModel)]="comprador" name="comprador"><br>
+    Nombre: <input type="text" [(ngModel)]="nombre" name="nombre"><br><br>
+    Cantidad Compradores (MAX 5): <input type="text" [(ngModel)]="comprador" name="comprador"><br><br>
     Tarjeta Cinepolis: 
     <!--<select>
         <option value="--" >--</option>
@@ -9,14 +15,20 @@
         <option value="no" [(ngModel)]="tarjetaNo" name="tarjetaNo">No</option>
     </select><br>-->
     <input type="radio" value="si" name="tarjeta" [(ngModel)]="tarjetaSi">Si
-    <input type="radio" value="no" name="tarjeta" [(ngModel)]="tarjetaNo">No<br>
+    <input type="radio" value="no" name="tarjeta" [(ngModel)]="tarjetaNo">No<br><br>
 
-    Cantidad Boletos: <input type="text" [(ngModel)]="boletos" name="boletos"><br>
+    Cantidad Boletos: <input type="text" [(ngModel)]="boletos" name="boletos"><br><br>
 
     <button type="button" (click)="procesar()">Procesar</button>
-
-    <h1>Comprador Principal: {{nombre}}</h1>
-    <h2>Boletos Comprados: {{boletos}}</h2>
-    <h2>Total: {{total}}</h2>
-    <h2>{{error}}</h2>
 </div>
+<div class="col">
+    <h2>Salidas</h2>
+    <h3>Comprador Principal: {{nombre}}</h3>
+    <h3>Boletos Comprados: {{boletos}}</h3>
+    <h3>Total: ${{total}} </h3>
+    <h3>{{diez}}</h3>
+    <h4>{{error}}</h4>
+    <h4>{{error2}}</h4>
+</div>
+</div>
+
